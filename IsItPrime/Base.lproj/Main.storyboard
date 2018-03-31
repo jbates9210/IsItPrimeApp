@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IsItPrime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj6-AQ-fBc">
+                                <rect key="frame" x="16" y="38" width="343" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="D6u-HJ-1uZ"/>
+                                    <constraint firstAttribute="height" constant="38" id="GLt-tb-blF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="32"/>
+                                <color key="textColor" red="0.97814825849999998" green="1" blue="0.99904883690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a positive whole number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lMk-Xn-vkA">
+                                <rect key="frame" x="79.5" y="84" width="216" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQJ-qV-vKm">
+                                <rect key="frame" x="144" y="131" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OUx-2v-cfb"/>
+                                    <constraint firstAttribute="width" constant="86" id="Rwf-x8-oEt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.97814825849999998" green="1" blue="0.99904883690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="primeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgX-Xo-uGY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YO-JN-agS">
+                                <rect key="frame" x="35" y="169" width="303" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FNX-oU-oz8"/>
+                                    <constraint firstAttribute="width" constant="303" id="vaR-3Z-KQg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" red="0.97814825849999998" green="1" blue="0.99904883690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="math.png" translatesAutoresizingMaskIntoConstraints="NO" id="JSW-0q-JEL">
+                                <rect key="frame" x="90.5" y="211" width="192" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="NB7-Kl-yhN"/>
+                                    <constraint firstAttribute="height" constant="194" id="T3D-B8-bUu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49047896234563615" green="0.74508350465991113" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2YO-JN-agS" firstAttribute="top" secondItem="EQJ-qV-vKm" secondAttribute="bottom" constant="8" id="06l-sE-8TI"/>
+                            <constraint firstItem="JSW-0q-JEL" firstAttribute="centerX" secondItem="2YO-JN-agS" secondAttribute="centerX" id="2ZA-lO-jjz"/>
+                            <constraint firstItem="EQJ-qV-vKm" firstAttribute="top" secondItem="lMk-Xn-vkA" secondAttribute="bottom" constant="17" id="S40-sm-tnK"/>
+                            <constraint firstItem="lMk-Xn-vkA" firstAttribute="top" secondItem="Vj6-AQ-fBc" secondAttribute="bottom" constant="8" id="b9h-9Z-eBR"/>
+                            <constraint firstItem="lMk-Xn-vkA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ecc-e0-BZr"/>
+                            <constraint firstItem="Vj6-AQ-fBc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="fCm-tc-3En"/>
+                            <constraint firstItem="EQJ-qV-vKm" firstAttribute="centerX" secondItem="lMk-Xn-vkA" secondAttribute="centerX" id="ktf-G8-CYg"/>
+                            <constraint firstItem="2YO-JN-agS" firstAttribute="centerX" secondItem="EQJ-qV-vKm" secondAttribute="centerX" id="nLX-s0-KxX"/>
+                            <constraint firstItem="JSW-0q-JEL" firstAttribute="top" secondItem="2YO-JN-agS" secondAttribute="bottom" constant="8" id="rni-MQ-v7z"/>
+                            <constraint firstItem="Vj6-AQ-fBc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sgR-C5-cOz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="isPrimeLabel" destination="2YO-JN-agS" id="xvl-qF-Tfi"/>
+                        <outlet property="textInput" destination="lMk-Xn-vkA" id="kSJ-GX-eaY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="math.png" width="2000" height="2000"/>
+    </resources>
+</document>
